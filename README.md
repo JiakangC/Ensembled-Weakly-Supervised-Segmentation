@@ -1,1 +1,1 @@
-# Ensembled-Weakly-Supervised-Segmentation
+# COMP0197_Group
