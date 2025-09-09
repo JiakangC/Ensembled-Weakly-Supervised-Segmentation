@@ -29,7 +29,7 @@ Ensembled-Weakly-Supervised-Segmentation/
 ```
 ## Data set 
 
-[The Oxford-IIIT Pet Data-set][https://www.robots.ox.ac.uk/~vgg/data/pets/] will be used for training and evaluation in this project. The dataset contains
+[The Oxford-IIIT Pet Data-set](https://www.robots.ox.ac.uk/~vgg/data/pets) will be used for training and evaluation in this project. The dataset contains
 thousands of images with pixel-level annotations for animal segmentation. For weakly-supervised
 learning, only image-level labels and/or bounding box annotations will be used as primary supervision
 during training.
@@ -50,6 +50,7 @@ Here is a general comparsion between famous method CAM, CCAM, ECS-CAM and ECS-CC
 | CCAM+ECS   |              —  |              —  |          —  |           —  |        24.59 |         37.31 |
 
 Then, we include the new data set for background.
+
 **Table 2.**: Data enhancements performance
 
 | Method     | 2-Class IoU | 2-Class Dice | 2/bg-Class IoU | 2/bg-Class Dice | 37-Class IoU | 37-Class Dice | 37/bg-Class IoU | 37/bg-Class Dice |
@@ -110,3 +111,9 @@ python train_unet/train_on_37CCAM.py
 # training with groundtruth data on U-Net (Baseline)
 python train_unet/train_on_gt.py
 ```
+
+## Contributing
+Contributions are welcome! If you extend the solver to other PDEs, improve the training routine or add new visualisations, feel free to open a pull request. Please accompany code changes with documentation and, where appropriate, update the README. For questions or suggestions, open an issue on GitHub.
+
+## License
+This project is released under the MIT License (see LICENSE).
